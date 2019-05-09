@@ -1,0 +1,69 @@
+/* You can add global styles to this file, and also import other style files */
+body,h1,h2,h3,h4,h5,h6,ul{
+    margin: 0;
+    padding: 0;
+   
+}
+.middlecont{
+    height: 520px;
+    width: 800px;
+    border: solid 1px white;
+    margin-left: 280px;
+    background: white;
+    border-radius: 5px;
+}
+.heading{
+    font-size: 50px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+.innerheading{
+    text-align: center;
+    font-size: 20px;
+    color: dodgerblue;
+}
+span{
+    font-size: 16px;
+    font-weight: bold;
+}	
+.qns{
+    margin-top: 20px;
+}
+.opt{
+    margin-top: 15px;
+}
+.middlecont{
+    padding-left: 20px;
+}
+.btns{
+    margin-top: 20px;
+    margin-left: 150px;
+}
+.subsurvy{
+    padding:10px 50px;
+    background: dodgerblue;
+    border: solid 1px white;
+    border-radius: 4px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    cursor:pointer;
+}
+.cancel{
+    padding:10px 50px;
+    background: dodgerblue;
+    border: solid 1px white;
+    border-radius: 4px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 15px;
+    cursor:pointer;
+}
+.subsurvy:hover{
+    background: red;
+}
+.cancel:hover{
+    background: red;
+}

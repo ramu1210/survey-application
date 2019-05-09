@@ -1,0 +1,18 @@
+.thank{
+    color:blue;
+    text-align: center;
+    font-size: 30px;
+}
+.survey{
+    text-align: center;
+    color:seagreen;
+    border: dotted 1px blue;
+    display: inline-block;
+}
+.survey h3{
+    color:red;
+}
+.total{
+    text-align: center;
+    margin-top: 20px;
+}

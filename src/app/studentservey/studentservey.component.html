@@ -1,0 +1,45 @@
+ <div class="main">
+		<div class="middlecont">
+        <form  #taskForm="ngForm" (ngSubmit)="addtasks(taskForm)">
+			<div class="innerheading">Complete Your Survey Here</div>
+			<div class="qns"><span>Question 1 : </span> Choose Your Grade.</div>
+      <div class="opt"><span>Options : </span>
+        <input type="radio" name="opt" [(ngModel)]="selectoption.qun1" value="A">A+ &nbsp;&nbsp;
+        <input type="radio" name="opt" [(ngModel)]="selectoption.qun1" value="A">A
+        <input type="radio" name="opt" [(ngModel)]="selectoption.qun1" value="B">B
+        <input type="radio" name="opt" [(ngModel)]="selectoption.qun1" value="C">C
+      </div><hr>
+			
+			<div class="qns"><span>Question 2 : </span> Is your teacher fair to you?</div>
+      <div class="opt"><span>Options : </span>
+        <input type="radio" name="opt1"  [(ngModel)]="selectoption.qun2" value="yes">Yes 
+        &nbsp;&nbsp;
+        <input type="radio" name="opt1"  [(ngModel)]="selectoption.qun2" value="no">No
+      </div><hr>
+			
+			<div class="qns"><span>Question 3 : </span> Does your teacher treat you with respect?</div>
+      <div class="opt"><span>Options : </span>
+        <input type="radio" name="opt2" [(ngModel)]="selectoption.qun3" value="yes">Yes &nbsp;&nbsp;
+        <input type="radio" name="opt2" [(ngModel)]="selectoption.qun3" value="no">No
+      </div><hr>
+			
+			<div class="qns"><span>Question 4 : </span>Can you find the things you need in your classroom?</div>
+      <div class="opt"><span>Options : </span>
+        <input type="radio" name="opt3" [(ngModel)]="selectoption.qun4" value="yes">Yes &nbsp;&nbsp;
+        <input type="radio" name="opt3" [(ngModel)]="selectoption.qun4" value="no">No
+      </div><hr>
+			
+			<div class="qns"><span>Question 5 : </span> Does your homework help you learn? </div>
+      <div class="opt"><span>Options : </span>
+        <input type="radio" name="opt4" [(ngModel)]="selectoption.qun5" value="yes">Yes &nbsp;&nbsp;
+        <input type="radio" name="opt4" [(ngModel)]="selectoption.qun5" value="no">No
+      </div><hr>
+			
+      <div class="btns"><button class="subsurvy" type="submit">Save Survey</button>
+        <button class="cancel" type="button" (click)="backtosurvey()">Cancel</button>
+
+      </div>
+      </form>
+  
+		</div>
+	</div>

@@ -1,0 +1,46 @@
+<div>
+  <h1>Survey Center</h1>
+</div>
+<div>
+  <form #taskForm="ngForm" (ngSubmit)="addtasks(taskForm)">
+      <div class="form-group col-sm-6">
+          <label for="exampleInputPassword1">Name</label>
+          <input type="text" class="form-control"  placeholder="Enter Name" [(ngModel)]="custname"
+           required name="custname"  minlength="3" maxlength="35" #name="ngModel">
+           <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+            <div *ngIf="name.errors.required">
+                Name is required
+            </div>
+            <div *ngIf="name.errors.minlength">
+                minlength should be greater than 6 characters
+            </div>
+            <div *ngIf="name.errors.maxlength">
+                maxlength should be less than 12 characters
+            </div>
+        </div>
+        </div>
+    <div class="form-group col-sm-6">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control"   placeholder="Enter email" [(ngModel)]="custemail" required 
+      name="custemail" #email="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" >
+      <div *ngIf="email.invalid&&(email.dirty || email.touched)" class="alert alert-danger">
+        <div *ngIf="email.errors.required">
+            Email Is Required
+        </div>
+        <div *ngIf="email.errors.pattern">
+           Input should be an Email
+        </div>
+      </div>
+    </div>
+    <div class="col-auto my-1 col-sm-6">
+        <label class="sm-2" for="inlineFormCustomSelect">Select Servey Options</label>
+        <select class="custom-select sm-2" id="inlineFormCustomSelect" [(ngModel)]="custsurvey" required name="cust">
+          <option value="">Choose Survey</option>
+          <option >Employee Survey</option>
+          <option >Customer Survey</option>
+          <option >Student Survey</option>
+        </select>
+      </div>
+    <button type="submit" class="btn btn-primary">StartSurvey</button>
+  </form>
+</div>
